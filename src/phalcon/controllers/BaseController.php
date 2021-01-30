@@ -20,8 +20,7 @@ class BaseController extends Controller {
     /**
      */
     public function sampleApiAction() {
-        $this->view->disable();
-        $this->response->setJsonContent([
+        return $this->response->setJsonContent([
             'config' => conf()->toArray()
         ]);
     }
