@@ -1,0 +1,8 @@
+{% if config.debug %}
+
+<script type="module">import "//{{ config.jscssServer }}/vite/client"</script>
+<script type="module" src="//{{ config.jscssServer }}/www/src/main.js"></script>
+
+{% else %}
+{# link to compiled version  #}
+{% endif %}

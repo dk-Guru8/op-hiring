@@ -1,0 +1,32 @@
+version: "3.5"
+
+services:
+
+    jscss:
+      container_name: hiring.jscss
+      build:
+        context: ./docker/jscss
+      restart: unless-stopped
+      ports:
+        - '3000:3000'
+      volumes:
+        - ./VERSION:/VERSION:ro
+        - ./src/jscss:/npm/www
+
+      working_dir: /npm
+      command: bash -c "npm run dev"
+
+    web:
+      build:
+        context: ./docker/web/
+      ports:
+        - '80:80'
+      environment:
+        ENV: dev
+        JSCSS_SERVER: "127.0.0.1:3000"
+      container_name: hiring.web
+      restart: unless-stopped
+      volumes:
+        - ./src/phalcon/public:/var/www/html
+        - ./src/phalcon/:/app
+

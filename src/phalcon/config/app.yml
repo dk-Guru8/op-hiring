@@ -1,0 +1,10 @@
+debug: 1
+
+jscssServer: !ENV JSCSS_SERVER
+
+routes:
+  Base::index:
+    pattern: /
+
+  Base::sampleApi:
+    pattern: /sampleApi

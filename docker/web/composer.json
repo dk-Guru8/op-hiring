@@ -1,0 +1,24 @@
+{
+    "autoload": {
+        "classmap": [
+            "/app/controllers"
+        ],
+        "files": [
+        ]
+    },
+    "require-dev": {
+        "snowair/phalcon-debugbar": "^1.2",
+        "phalcon/devtools": "3.1.2"
+    },
+    "require": {
+        "illuminate/support": "*",
+        "divineomega/array_undot": "*",
+        "nesbot/carbon": "^2.41.0",
+        "phalcon/incubator": "~3.0",
+        "twig/twig": "~1.0",
+        "twig/extensions": "^1.5",
+        "monolog/monolog": "^1.21",
+        "rmccue/requests": ">=1.0",
+        "symfony/yaml": "^3.1"
+    }
+}
