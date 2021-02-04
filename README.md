@@ -1,3 +1,8 @@
+# Task
+You need to develop an autocomplete component. Example in the picture below
+![Autocomplete](https://i2.wp.com/onaircode.com/wp-content/uploads/2019/10/forked-simple-autocomplete.jpg?resize=1080%2C675&ssl=1)
+
+
 # Frontend development environment
 
 ## Requirements
